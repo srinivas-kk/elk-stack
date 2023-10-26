@@ -95,10 +95,10 @@ labels: {}
 
 esJavaOpts: "" # example: "-Xmx1g -Xms1g"
 
-resources:
-  limits:
-    cpu: "1000m"
-    memory: "2Gi"
+# resources:
+#   limits:
+#     cpu: "1000m"
+#     memory: "1Gi"
 
 initResources: {}
 # limits:
@@ -115,7 +115,7 @@ volumeClaimTemplate:
   storageClassName: "standard"
   resources:
     requests:
-      storage: 3Gi
+      storage: 512Mi
 
 rbac:
   create: false
