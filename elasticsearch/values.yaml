@@ -78,7 +78,7 @@ secretMounts: []
 #    defaultMode: 0755
 
 hostAliases: []
-#- ip: "127.0.0.1"
+#- ip: "127.0.0.1"A
 #  hostnames:
 #  - "foo.local"
 #  - "bar.local"
@@ -93,7 +93,7 @@ podAnnotations: {}
 # additionals labels
 labels: {}
 
-esJavaOpts: "" # example: "-Xmx1g -Xms1g"
+esJavaOpts: "-Xmx128m -Xms128m"" # example: "-Xmx1g -Xms1g"
 
 # resources:
 #   limits:
