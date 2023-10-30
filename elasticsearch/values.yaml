@@ -93,7 +93,7 @@ podAnnotations: {}
 # additionals labels
 labels: {}
 
-esJavaOpts: "-Xmx128m -Xms128m"" # example: "-Xmx1g -Xms1g"
+esJavaOpts: "-Xmx512m -Xms512m"
 
 # resources:
 #   limits:
