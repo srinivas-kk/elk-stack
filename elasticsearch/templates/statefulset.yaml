@@ -174,7 +174,10 @@ spec:
           privileged: true
         image: "{{ .Values.image }}:{{ .Values.imageTag }}"
         imagePullPolicy: "{{ .Values.imagePullPolicy }}"
-        command: ["set", "-x", "sysctl", "-w", "vm.max_map_count={{ .Values.sysctlVmMaxMapCount}}"]
+        command: 
+        - bash 
+        - -c 
+        - set -x sysctl -w vm.max_map_count=262144
         resources:
 {{ toYaml .Values.initResources | indent 10 }}
       {{- end }}
